@@ -1,0 +1,60 @@
+# /auth/auth
+
+This API is used to show the user a webview to sing in.
+
+## Basics
+
+`[GET] https://cloud.xee.com/v3/auth/auth?client_id={client_id}&scope={scope}&redirect_uri={redirect_uri}&state={state}`
+
+Secured by **Nothing**
+
+## How it works
+
+### Headers
+
+No headers needed here
+
+### Query parameters
+
+|Parameter name|Parameter value|Mandatory|
+|---|---|---|
+|`client_id`|The `client id` of your application|YES|
+|`scope`|The list of `scopes`, split by a *space* and *url encoded*|YES|
+|`redirect_uri`|The `uri` our server will *redirect* to once the user has entered its credentials|YES|
+|`state`|An optional state to identify the user from your side|NO|
+
+
+### Example
+
+`[GET] https://cloud.xee.com/v3/auth/auth?client_id=azerty&scope=users_read%20cars_read&redirect_uri=https%3A%2F%2Fexample.com%2Fxee%2Foauth`
+
+This is the *url* to call when your client:
+
+- Has `azerty` for the client id
+- Wants to access `users_read` and `cars_read` scopes
+- Has `https://example.com/xee/oauth` as the `redirect uri`
+- Has no `state`
+
+Once the user clicks *Connect*, we will check the user/password and then redirect to `https://example.com/xee/oauth` with a `code`
+
+We'll do thing by setting a `Location` header, for example:
+
+`Location: https://example.com/xee/oauth?code=theawesomecode`
+
+### The redirect uri
+
+The redirect uri should be owned by you (so either a domain name you own, where you can put some code, either localhost).
+
+When the redirect uri is called, we'll provide you an `access code`, via the parameter `code`.
+
+This code will help you to obtain the first `access token` for the user who signed in.
+
+So keep this code in hand, and then refer to the [access_token](access_token.md) page.
+
+### Errors
+
+If the `client_id` is wrong, or id the `redirect_uri` does not match any specified in the [developer space](https://dev.xee.com), we'll throw a `404`
+
+- Reason: `client_id` does not exist or `redirect_uri` does not match
+- Status Code: `404`
+- Body: An HTML body with
