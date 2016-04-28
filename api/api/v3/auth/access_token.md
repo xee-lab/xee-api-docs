@@ -104,7 +104,7 @@ For this request, you'll need *2 POST* parameters.
 
 |Parameter name|Parameter value|
 |---|---|
-|`grant-type`|`refresh_token`|
+|`grant_type`|`refresh_token`|
 |`refresh_token`|The *refresh_token* you saved from the first time you asked one|
 
 And then `POST` it
