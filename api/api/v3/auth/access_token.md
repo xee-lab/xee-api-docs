@@ -17,7 +17,7 @@ Secured by **Basic** Authorization.
 
 |Header name|Header value|Mandatory|
 |---|---|---|
-|Authorization|`Basic: base64(clientId:clientSecret)` with your client information|YES|
+|Authorization|`Basic base64(clientId:clientSecret)` with your client information|YES|
 |Content-Type|`application/x-www-form-urlencoded`|YES|
 
 ### Parameters
@@ -95,7 +95,7 @@ The system is very similar to the one used to get a token for the first time.
 
 |Header name|Header value|Mandatory|
 |---|---|---|
-|Authorization|`Basic: base64(clientId:clientSecret)` with the client information|YES|
+|Authorization|`Basic base64(clientId:clientSecret)` with the client information|YES|
 |Content-Type|`application/x-www-form-urlencoded`|YES|
 
 ### Parameters
