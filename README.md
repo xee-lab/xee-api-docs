@@ -10,9 +10,9 @@ This is the official documentation for the Xee Platform, written by the [Xee tec
 - [Rest API](api/README.md)
     - Start your first app connected with Xee
 - [Android SDK](android/README.md)
-    - Accessing your Pi remotely via SSH, VNC or over the web
+    - An Android toolbox that helps you deal with Xee API without doing the requests
 - [iOS SDK](ios/README.md)
-    - Fundamental Linux usage for beginners and more advanced information for power users
+    - An iOS toolbox that helps you deal with Xee API without doing the requests
 
 ## Contributions
 
