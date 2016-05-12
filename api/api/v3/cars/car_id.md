@@ -37,7 +37,7 @@ Secured by **OAuth 2** access token.
     "model": "42",
     "year": 2014,
     "numberPlate": "M-42-TS",
-    "deviceId": 42,
+    "deviceId": "E133742015",
     "cardbId": 210,
     "creationDate": "2014-09-23T12:49:48+00:00",
     "lastUpdateDate": "2016-02-19T08:41:58+00:00"
@@ -46,16 +46,16 @@ Secured by **OAuth 2** access token.
 
 |Property|Type|Comment|
 |---|---|---|
-|id|string|The `id` of the car|
+|id|string||
 |name|string||
 |make|string|Might be `generic`|
 |model|string|Might be `null`|
 |year|integer|Might be `0`|
 |numberPlate|string|Might be `null`|
-|deviceId|integer|Might be `null`|
+|deviceId|string|The `serial number` of the device. Might be `null` if the car has no device associated|
 |cardbId|integer|Represents the type of the *car* from our point of view, that's how we speek to them|
 |creationDate|date||
-| lastUpdateDate|date||
+|lastUpdateDate|date||
 
 ## Errors
 
