@@ -43,6 +43,7 @@ This is the first route of our API, from this, you can get the logged in user da
 |API|Description|
 |---|---|
 |[`/users/me`](users/me.md)|Get the connected user|
+|[`/users/me/cars`](users/me/cars.md)|Get all the cars for the connected user|
 |[`/users/{userId}`](users/user_id.md)|Get a specific user|
 |[`/users/{userId}/cars`](users/cars.md)|Get all the cars from a user|
 
