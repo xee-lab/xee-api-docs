@@ -30,4 +30,7 @@ There are 3 kind of errors with the `access_token`:
 |---|---|---|---|---|
 |Missing header|`401`|`AUTHENTICATION_ERROR`|Authorization is missing|Add the Authorization header with a valid access_token|
 |Malformed Token|`401`|`AUTHENTICATION_ERROR`|Authorization is malformed|Add the Authorization header with a valid access_token|
-|Invalid Token|`403`|`AUTHENTICATION_ERROR`|Invalid token|Try to refresh access_token or ask the user to sign-in again|
+|Invalid Token|`401`|`AUTHENTICATION_ERROR`|Invalid token|Try to refresh access_token or ask the user to sign-in again|
+|Missing scope|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the {neededScope} scope to your app scopes and reconnect the user|
+|Expired Token|`403`|`AUTHORIZATION_ERROR`|Token has expired|Refresh the access token and then retry|
+|Revoked Token|`403`|`AUTHORIZATION_ERROR`|Token has been revoked|Create a new access token and then retry|
