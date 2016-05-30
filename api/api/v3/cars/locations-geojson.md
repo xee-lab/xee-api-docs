@@ -1,4 +1,4 @@
-# /cars/{carId}/locations
+# /cars/{carId}/locations.geojson
 
 Get the locations history from a specific *car* as an array of [Geojson points](http://geojson.org/geojson-spec.html#id2)
 
@@ -46,8 +46,7 @@ Secured by **OAuth 2** access token.
 		"coordinates": [
 			3.0508652, 50.68075
 		]
-	},
-	...
+	}
 ]
 ```
 

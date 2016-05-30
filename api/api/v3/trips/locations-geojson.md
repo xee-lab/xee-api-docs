@@ -1,4 +1,4 @@
-# /trips/{tripId}/locations
+# /trips/{tripId}/locations.geojson
 
 Get the locations history from a specific *trip as a [Geojson LineString](http://geojson.org/geojson-spec.html#id3)*
 
@@ -30,11 +30,10 @@ Secured by **OAuth 2** access token.
 - Body:
 
 ```javascript 
-{"type":
-	"LineString",
+{
+	"type": "LineString",
 	"coordinates":[
-		[3.0580485,50.632244]
-		...
+		[3.0580485, 50.632244]
 	]
 }
 ```
