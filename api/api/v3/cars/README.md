@@ -9,6 +9,7 @@ Get car data, signals, locations, trips...
 |[`/cars/{carId}`](car_id.md)|Get a specific car from its *id*|
 |[`/cars/{carId}/status`](status.md)|Get the last status of the car|
 |[`/cars/{carId}/locations`](locations.md)|Get raw locations history of the car|
+|[`/cars/{carId}/locations.geojson`](locations-geojson.md)|Get car *locations* history in a [geojson](http://geojson.org/) format|
 |[`/cars/{carId}/signals`](signals.md)|Get raw signals history of the car|
 |[`/cars/{carId}/trips`](trips.md)|Get the car *trips*|
 

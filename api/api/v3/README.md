@@ -58,6 +58,7 @@ This is the second route of our API, from this, you can get all the *raw* car da
 |[`/cars/{carId}`](cars/car_id.md)|Get a specific car from its *id*|
 |[`/cars/{carId}/status`](cars/status.md)|Get car *status*|
 |[`/cars/{carId}/locations`](cars/locations.md)|Get car *locations* history|
+|[`/cars/{carId}/locations.geojson`](cars/locations-geojson.md)|Get car *locations* history in a [geojson](http://geojson.org/) format|
 |[`/cars/{carId}/signals`](cars/signals.md)|Get car *signals* history|
 |[`/cars/{carId}/trips`](cars/trips.md)|Get car *trips*|
 
@@ -71,6 +72,7 @@ This is the third route of our API, from this, you can get all the *trips relate
 |---|---|
 |[`/trips/{tripId}`](trips/trip_id.md)|Get a specific *trip* from its *id*|
 |[`/trips/{tripId}/locations`](trips/locations.md)|Get all locations from a *car* during a specific *trip*|
+|[`/trips/{tripId}/locations.geojson`](trips/locations-geojson.md)|Get all locations from a *car* during a specific *trip* in a [geojson](http://geojson.org/) format|
 |[`/trips/{tripId}/signals`](trips/signals.md)|Get all signals from a *car* during a specific *trip*|
 
 ## Errors
