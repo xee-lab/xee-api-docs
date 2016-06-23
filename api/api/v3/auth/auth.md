@@ -1,6 +1,6 @@
 # /auth/auth
 
-This API is used to show the user a webview to sing in.
+This API is used to show the user a webview to sign in.
 
 ## Basics
 
