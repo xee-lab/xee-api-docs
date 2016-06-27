@@ -4,13 +4,22 @@ Get a specific trip
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/trips/{tripId}`
+`[GET] https://{env}.xee.com/v3/trips/{tripId}`
 
 > You'll need the *trips_read* scope.
 
 Secured by **OAuth 2** access token.
 
 ## Request
+
+### Environment
+
+The `env` variable as the host of the route can be changed for testing purpose.
+
+|Value|Comment|
+|---|---|
+|`cloud`|**production** environment (*real* client data, `Authorization` needed)|
+|`sandbox`|**sandbox** environment (*fake* data, **no** `Authorization` needed)|
 
 ### Headers
 

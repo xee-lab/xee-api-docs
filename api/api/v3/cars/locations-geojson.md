@@ -4,7 +4,7 @@ Get the locations history from a specific *car* as an array of [Geojson points](
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/cars/{carId}/locations.geojson?limit={limit}&begin={begin}&end={end}`
+`[GET] https://{env}.xee.com/v3/cars/{carId}/locations.geojson?limit={limit}&begin={begin}&end={end}`
 
 > You'll need the *locations_read* scope.
 
@@ -13,6 +13,15 @@ Secured by **OAuth 2** access token.
 > Be aware you can only request one month max per request
 
 ## Request
+
+### Environment
+
+The `env` variable as the host of the route can be changed for testing purpose.
+
+|Value|Comment|
+|---|---|
+|`cloud`|**production** environment (*real* client data, `Authorization` needed)|
+|`sandbox`|**sandbox** environment (*fake* data, **no** `Authorization` needed)|
 
 ### Headers
 
