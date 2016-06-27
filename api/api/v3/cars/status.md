@@ -4,13 +4,22 @@ Get the current *status* of a specific car
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/cars/{carId}/status`
+`[GET] https://{env}.xee.com/v3/cars/{carId}/status`
 
 > You'll need the *status_read* scope.
 
 Secured by **OAuth 2** access token.
 
 ## Request
+
+### Environment
+
+The `env` variable as the host of the route can be changed for testing purpose.
+
+|Value|Comment|
+|---|---|
+|`cloud`|**production** environment (*real* client data, `Authorization` needed)|
+|`sandbox`|**sandbox** environment (*fake* data, **no** `Authorization` needed)|
 
 ### Headers
 

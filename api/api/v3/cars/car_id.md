@@ -4,13 +4,22 @@ Get a specific *car* from its `id`
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/cars/{carId}`
+`[GET] https://{env}.xee.com/v3/cars/{carId}`
 
 > You'll need the *cars_read* scope.
 
 Secured by **OAuth 2** access token.
 
 ## Request
+
+### Environment
+
+The `env` variable as the host of the route can be changed for testing purpose.
+
+|Value|Comment|
+|---|---|
+|`cloud`|**production** environment (*real* client data, `Authorization` needed)|
+|`sandbox`|**sandbox** environment (*fake* data, **no** `Authorization` needed)|
 
 ### Headers
 

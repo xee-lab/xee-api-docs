@@ -4,7 +4,6 @@ This is the official documentation for the Xee Platform, written by the [Xee tec
 
 ## Contents
 
-
 - [Setup / Quickstart](setup/README.md)
     - Getting started with the Xee environment
 - [Rest API](api/README.md)

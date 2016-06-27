@@ -34,6 +34,10 @@ The process is quite simple, don't be afraid!
 
 ## API
 
+All the **routes** are bellow `https://cloud.xee.com/v3`.
+
+> Note if you need **sandbox APIs** for testing purpose or starting, you can do it by using `https://sandbox.xee.com/v3` as route host.
+
 ### Users
 
 This is the first route of our API, from this, you can get the logged in user data

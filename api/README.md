@@ -14,6 +14,10 @@ All our API are bellow `https://cloud.xee.com`, as we're in the third version, a
 
 > If there is a special case with a legacy API, it'll be explained in the description of the route.
 
+## Mocking
+
+From the third version of our API, there is a **sandbox API** exposing *fake data*, you can reach it by using `https://sandbox.xee.com/v3/`
+
 ## API
 
 See our [API v3 Documentation](api/v3/README.md)

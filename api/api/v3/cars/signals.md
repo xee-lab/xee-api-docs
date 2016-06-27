@@ -4,7 +4,7 @@ Get all signals (data) history from a specific *car*
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/cars/{carId}/signals?limit={limit}&begin={begin}&end={end}&name={name1},{etc...}`
+`[GET] https://{env}.xee.com/v3/cars/{carId}/signals?limit={limit}&begin={begin}&end={end}&name={name1},{etc...}`
 
 > You'll need the *signals_read* scope.
 
@@ -13,6 +13,15 @@ Secured by **OAuth 2** access token.
 > Be aware you can only request one month max interval per request
 
 ## Request
+
+### Environment
+
+The `env` variable as the host of the route can be changed for testing purpose.
+
+|Value|Comment|
+|---|---|
+|`cloud`|**production** environment (*real* client data, `Authorization` needed)|
+|`sandbox`|**sandbox** environment (*fake* data, **no** `Authorization` needed)|
 
 ### Headers
 

@@ -4,13 +4,22 @@ Get all *cars* from a specific *user* by its `id`
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/users/{userId}/cars`
+`[GET] https://{env}.xee.com/v3/users/{userId}/cars`
 
 > You'll need the *cars_read* scope.
 
 Secured by **OAuth 2** access token.
 
 ## Request
+
+### Environment
+
+The `env` variable as the host of the route can be changed for testing purpose.
+
+|Value|Comment|
+|---|---|
+|`cloud`|**production** environment (*real* client data, `Authorization` needed)|
+|`sandbox`|**sandbox** environment (*fake* data, **no** `Authorization` needed)|
 
 ### Headers
 
