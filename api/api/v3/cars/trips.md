@@ -50,7 +50,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 ```javascript 
 [
 	{
-		"uuid": "56b43a4f051f29071f14218d",
+		"id": "56b43a4f051f29071f14218d",
 		"beginLocation": {
 			"latitude": 50.6817,
 			"longitude": 3.08202,
@@ -80,7 +80,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Property|Type|Comment|
 |---|---|---|
-|uuid|UUID|The uuid of the trip|
+|id|string|An id for the trip|
 |beginLocation|location|The first *location* of the trip|
 |endLocation|location|The last *location* of the trip|
 |beginDate|date|the date when the trip has started|
