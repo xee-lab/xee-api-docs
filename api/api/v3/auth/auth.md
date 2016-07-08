@@ -60,7 +60,7 @@ So keep this code in hand, and then refer to the [access_token](access_token.md)
 
 ### Errors
 
-If the `client_id` is wrong, or id the `redirect_uri` is set but does not match any specified in the [developer space](https://dev.xee.com), we'll throw a `404`
+If the `client_id` is wrong, or the `redirect_uri` is set but does not match any specified in the [developer space](https://dev.xee.com), we'll throw a `404`
 
 - Reason: `client_id` does not exist or `redirect_uri` is set but does not match
 - Status Code: `404`
