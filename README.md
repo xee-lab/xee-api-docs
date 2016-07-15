@@ -8,10 +8,25 @@ This is the official documentation for the Xee Platform, written by the [Xee tec
     - Getting started with the Xee environment
 - [Rest API](api/README.md)
     - Start your first app connected with Xee
-- [Android SDK](android/README.md)
-    - An Android toolbox that helps you deal with Xee API without doing the requests
-- [iOS SDK](ios/README.md)
-    - An iOS toolbox that helps you deal with Xee API without doing the requests
+
+## Official SDKs
+
+|Language|Author|Link|
+|---|---|---|
+|Android|[xee-lab](https://github.com/xee-lab)|[xee-sdk-android](https://github.com/xee-lab/xee-sdk-android)|
+|iOS|[xee-lab](https://github.com/xee-lab)|[xee-sdk-ios](https://github.com/xee-lab/xee-sdk-ios)|
+
+## Third party SDKs
+
+As the API is open, it's up to you to create an SDK for the platform.
+
+> Xee Tech Team will continue to maintain official SDKs (Android and iOS).
+
+Here is the list of SDK from community.
+
+|Language|Author|Link|
+|---|---|---|
+|Golang|[laibulle](https://github.com/laibulle/)|[go-xee](https://github.com/laibulle/go-xee)|
 
 ## Contributions
 
