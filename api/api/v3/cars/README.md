@@ -12,6 +12,8 @@ Get car data, signals, locations, trips...
 |[`/cars/{carId}/locations.geojson`](locations-geojson.md)|Get car *locations* history in a [geojson](http://geojson.org/) format|
 |[`/cars/{carId}/signals`](signals.md)|Get raw signals history of the car|
 |[`/cars/{carId}/trips`](trips.md)|Get the car *trips*|
+|[`/cars/{carId}/stats/mileage`](stats/mileage.md)|Get car *mileage* statistic|
+|[`/cars/{carId}/stats/usedtime`](stats/usedtime.md)|Get car *used time* statistic|
 
 ## Signals list
 
