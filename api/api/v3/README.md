@@ -65,6 +65,8 @@ This is the second route of our API, from this, you can get all the *raw* car da
 |[`/cars/{carId}/locations.geojson`](cars/locations-geojson.md)|Get car *locations* history in a [geojson](http://geojson.org/) format|
 |[`/cars/{carId}/signals`](cars/signals.md)|Get car *signals* history|
 |[`/cars/{carId}/trips`](cars/trips.md)|Get car *trips*|
+|[`/cars/{carId}/stats/mileage`](cars/stats/mileage.md)|Get car *mileage* statistic|
+|[`/cars/{carId}/stats/usedtime`](cars/stats/usedtime.md)|Get car *used time* statistic|
 
 ### Trips
 
