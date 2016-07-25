@@ -8,7 +8,7 @@ The `v2` of our API was good in terms of content, but there were some *ugly* thi
 
 - Dates were not the same everywhere
 - Errors were not the same everywhere
-- Somethings it was v1, sometimes v2
+- Sometimes it was v1, sometimes v2
 
 So we decided to build a `v3` to get a new begining. The goal is to be *simple*, *easy*.
 

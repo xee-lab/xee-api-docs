@@ -5,6 +5,7 @@
 |Date|Type|Description|Link|
 |---|---|---|---|
 |2016-07-27|UPDATE|Typo in stats|[`/cars/{carId}/stats/usedtime`](api/v3/cars/stats/usedtime.md)|
+|2016-07-25|UPDATE|Fixes a typo (issue #26)|[README](api/v3/README.md)|
 |2016-07-15|ADD|Add `cars` stats|[`/cars/{carId}/stats/mileage`](api/v3/cars/stats/mileage.md),<br />[`/cars/{carId}/stats/usedtime`](api/v3/cars/stats/usedtime.md)|
 |2016-07-07|UPDATE|Update `trips` responses|[`/cars/{carId}/trips`](api/v3/cars/trips.md),<br />[`/trips/{tripId}`](api/v3/trips/trip_id.md)|
 |2016-06-27|ADD|We've added *sandbox* APIs on specified routes|[`/users/{userId}`](api/v3/users/user_id.md), <br/>[`/cars/{carId}`](api/v3/cars/car_id.md),  <br/>[`/cars/{carId}/locations`](api/v3/cars/locations.md), <br/>[`/cars/{carId}/locations.geojson`](api/v3/cars/locations-geojson.md), <br/>[`/cars/{carId}/signals`](api/v3/cars/signals.md), <br/>[`/cars/{carId}/status`](api/v3/cars/status.md), <br/>[`/cars/{carId}/trips`](api/v3/cars/trips.md), <br/>[`/trips/{tripId}`](api/v3/trips/trip_id.md), <br/>[`/trips/{tripId}/locations`](api/v3/trips/locations.md), <br/>[`/trips/{tripId}/locations.geojson`](api/v3/trips/locations-geojson.md), <br/>[`/trips/{tripId}/signals`](api/v3/trips/signals.md)|
