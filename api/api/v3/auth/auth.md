@@ -26,12 +26,13 @@ No headers needed here
 
 ### Example
 
-`[GET] https://cloud.xee.com/v3/auth/auth?client_id=azerty`
+`[GET] https://cloud.xee.com/v3/auth/auth?client_id=azerty&scope=users_read+cars_read`
 
 This is the *url* to call when your client:
 
 - Has `azerty` for the client id
 - Wants to access `users_read` and `cars_read` scopes
+- Has no `redirect URI`
 - Has no `state`
 
 Once the user clicks *Connect*, we will check the user/password and then redirect to **the redirect uri you've specified in developer space** with a `code`

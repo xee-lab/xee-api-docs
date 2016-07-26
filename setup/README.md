@@ -54,15 +54,15 @@ In this case, you'll deal with our API directly, you can enjoy our [API Document
 
 Well, thats a good point, but, not an end, the thing is:
 
-*Do you need a third part server ?*
+*Do you need a third party server ?*
 
 We'll, if you do not know, this is simple, here some example to help you decide:
 
-- if your app will be on more than a system, and you want sync between your servers, then you'll need a third part server.
-- if you want to deal with your service on the mobile (not xee's one directly), then you'll need a third part server.
-- in fact, as soon as you want the Xee data to be out of the mobile app, you'll need a third part server.
+- if your app will be on more than a system, and you want sync between your servers, then you'll need a third party server.
+- if you want to deal with your service on the mobile (not xee's one directly), then you'll need a third party server.
+- in fact, as soon as you want the Xee data to be out of the mobile app, you'll need a third party server.
 
-#### I need a third part server
+#### I need a third party server
 
 Nice, in this case, this is the same thing for *web app* so you'll deal with our API directly, you can enjoy our [API Documentation](../api/README.md).
 
