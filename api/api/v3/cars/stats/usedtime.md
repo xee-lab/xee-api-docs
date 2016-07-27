@@ -33,7 +33,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Parameter name|Parameter value|Mandatory|
 |---|---|---|
-|`carId`|The `id` of the car you are looking for the *mileage*|YES|
+|`carId`|The `id` of the car you are looking for the *used time*|YES|
 
 ### Query Parameters
 
