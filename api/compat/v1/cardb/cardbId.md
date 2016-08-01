@@ -35,7 +35,7 @@ Secured by **Basic** auth.
     		"reliability": null
     	},
     	{
-    		"name": "FuelLevl",
+    		"name": "FuelLevel",
     		"reliability": "incremental"
     	}
     ],
