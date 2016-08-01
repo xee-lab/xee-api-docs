@@ -20,4 +20,5 @@ From the third version of our API, there is a **sandbox API** exposing *fake dat
 
 ## API
 
-See our [API v3 Documentation](api/v3/README.md)
+- See our [API v3 Documentation](api/v3/README.md)
+- See our [Compat v1 Documentation](compat/v1/README.md)
