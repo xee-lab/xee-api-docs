@@ -4,6 +4,7 @@
 
 |Date|Type|Description|Link|
 |---|---|---|---|
+|2016-08-01|ADD|Add compatibility API|[`/compat/v1`](compat/v1/README.md)|
 |2016-07-27|UPDATE|Typo in stats|[`/cars/{carId}/stats/usedtime`](api/v3/cars/stats/usedtime.md)|
 |2016-07-25|UPDATE|Fixes a typo (issue #26)|[README](api/v3/README.md)|
 |2016-07-15|ADD|Add `cars` stats|[`/cars/{carId}/stats/mileage`](api/v3/cars/stats/mileage.md),<br />[`/cars/{carId}/stats/usedtime`](api/v3/cars/stats/usedtime.md)|
