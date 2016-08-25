@@ -4,7 +4,7 @@ Get a compatibility from a *ktype*
 
 ## Basics
 
-`[GET] https://compat.xee.com/v1/ktype/{ktype}?inservice={inservice}`
+`[GET] https://compat.xee.com/v1/ktype/{ktype}?in_service={in_service}`
 
 Secured by **Basic** auth.
 
@@ -26,7 +26,7 @@ Secured by **Basic** auth.
 
 |Parameter name|Parameter value|Mandatory|
 |---|---|---|
-|`inservice`|The `date` of the first time the car was used. Format is `yyyy-mm` (`2016-04`)|NO|
+|`in_service`|The `date` of the first time the car was used. Format is `yyyy-mm` (`2016-04`)|NO|
 
 ## Success Response
 
@@ -77,6 +77,6 @@ Secured by **Basic** auth.
 |Reason|Status Code|Type|Message|Tip|
 |---|---|---|---|---|
 |`ktype` not correct|`400`|`PARAMETERS_ERROR`|Unable to parse KType parameter|Please check if KType parameter you have set is a int|
-|`inservice` date not correct|`400`|`PARAMETERS_ERROR`|Unable to parse date|Please check the dates you have set in parameters are correct format `yyyy-mm` (`2016-04`)|
-|`ktype` does not exists in Xee|`404`|`NOT_FOUND`|KType not found|Please try with an other KType or specify/change the inService date.|
+|`in_service` date not correct|`400`|`PARAMETERS_ERROR`|Unable to parse date|Please check the dates you have set in parameters are correct format `yyyy-mm` (`2016-04`)|
+|`ktype` does not exists in Xee|`404`|`NOT_FOUND`|KType not found|Please try with an other KType or specify/change the in_service date.|
 
