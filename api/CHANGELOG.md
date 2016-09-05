@@ -4,6 +4,7 @@
 
 |Date|Type|Description|Link|
 |---|---|---|---|
+|2016-09-05|UPDATE|Fixes a typo (issue #38)|[`/users/{userId}`](api/v3/users/user_id.md), <br />[`/users/me`](api/v3/users/me.md)|
 |2016-08-25|UPDATE|The parameter `inservice` was replaced by `in_service`|[`/ktype/{ktype}`](compat/v1/ktype/ktype.md)
 |2016-08-01|ADD|Add compatibility API|[`/compat/v1`](compat/v1/README.md)|
 |2016-07-27|UPDATE|Typo in stats|[`/cars/{carId}/stats/usedtime`](api/v3/cars/stats/usedtime.md)|

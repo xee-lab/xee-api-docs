@@ -43,7 +43,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
     "id": 42,
     "lastName": "Doe",
     "firstName": "John",
-    "nickname": "Johny",
+    "nickName": "Johny",
     "gender": "MALE",
     "birthDate": "2016-01-11T00:00:00+00:00",
     "licenceDeliveryDate": "2014-08-13T00:00:00+00:00",
