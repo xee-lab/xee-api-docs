@@ -80,6 +80,9 @@ This is the third route of our API, from this, you can get all the *trips relate
 |[`/trips/{tripId}/locations`](trips/locations.md)|Get all locations from a *car* during a specific *trip*|
 |[`/trips/{tripId}/locations.geojson`](trips/locations-geojson.md)|Get all locations from a *car* during a specific *trip* in a [geojson](http://geojson.org/) format|
 |[`/trips/{tripId}/signals`](trips/signals.md)|Get all signals from a *car* during a specific *trip*|
+|[`/trips/{tripId}/stats`](trips/trip_id/stats.md)|Get a specific *trip* statistics|
+|[`/trips/{tripId}/stats/mileage`](trips/trip_id/stats/mileage.md)|Get a specific *trip* mileage|
+|[`/trips/{tripId}/stats/usedtime`](trips/trip_id/stats/usedtime.md)|Get a specific *trip* duration|
 
 ## Errors
 
