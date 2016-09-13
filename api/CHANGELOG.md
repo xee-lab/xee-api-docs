@@ -4,6 +4,7 @@
 
 |Date|Type|Description|Link|
 |---|---|---|---|
+|2016-09-13|UPDATE|Update the list of signals|[`/cars/signals_list`](api/v3/cars/signals_list.md)|
 |2016-09-05|ADD|Add trip statistics|[`/trips/{tripId}/stats`](api/v3/trips/trip_id/stats.md), <br />[`/trips/{tripId}/stats/mileage`](api/v3/trips/trip_id/stats/mileage.md), <br />[`/trips/{tripId}/stats/usedtime`](api/v3/trips/trip_id/stats/usedtime.md)|
 |2016-09-05|UPDATE|Fixes a typo (issue #38)|[`/users/{userId}`](api/v3/users/user_id.md), <br />[`/users/me`](api/v3/users/me.md)|
 |2016-08-25|UPDATE|The parameter `inservice` was replaced by `in_service`|[`/ktype/{ktype}`](compat/v1/ktype/ktype.md)
