@@ -38,6 +38,8 @@ All the *signals* you can access via the [signals API](signals.md)
 |**_Speed_**|||
 |`EngineSpeed`|Represents the **Engine speed**|Value is in `rpm`|
 |`VehiculeSpeed`|Represents the **Vehicle speed**|Value is in `km/h`|
+|**_Computed_**|||
+|`ComputedFuelLevel`|A smoothed value of the `FuelLevel` computed by *XeeCLOUD* [see notes](https://medium.com/@XeeTech/f2a227780f78)|Value is in `L`|
 
 ## Advanced Signals
 
