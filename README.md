@@ -32,6 +32,7 @@ Here is the list of SDK from community:
 |Language|Author|Link|License|Shields|
 |---|---|---|---|---|
 |[Golang](https://golang.org/)|[laibulle](https://github.com/laibulle/)|[go-xee](https://github.com/laibulle/go-xee)|![MIT](https://img.shields.io/badge/License-MIT-brightgreen.svg)|[![Build Status](https://travis-ci.org/laibulle/go-xee.svg?branch=master)](https://travis-ci.org/laibulle/go-xee) <br> [![Coverage Status](http://codecov.io/github/laibulle/go-xee/coverage.svg?branch=master)](http://codecov.io/github/laibulle/go-xee?branch=master)|
+|[Python](https://www.python.org/)|[quentin7b](https://github.com/quentin7b/)|[xee-sdk-python](https://github.com/quentin7b/xee-sdk-python)|![Apache 2](https://img.shields.io/badge/License-Apache%202.0-brightgreen.svg)|[![Build Status](https://travis-ci.org/quentin7b/xee-sdk-python.svg?branch=master)](https://travis-ci.org/laibulle/go-xee) <br> [![Coverage Status](http://codecov.io/github/quentin7b/xee-sdk-python/coverage.svg?branch=master)](http://codecov.io/github/quentin7b/xee-sdk-python?branch=master)|
 
 
 ## Contributions
