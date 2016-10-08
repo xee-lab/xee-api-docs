@@ -69,5 +69,3 @@ There is no parameter for this API
 |Reason|Status Code|Type|Message|Tip|
 |---|---|---|---|---|
 |You did not required `cars_read`|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the cars_read scope to your app scopes and reconnect the user|
-|The token does not have access to this user|`403`|`AUTHORIZATION_ERROR`|Token can't access this user|Make sure the trip belongs to the user you asked for|
-|User does not exist|`404`|`PARAMETERS_ERROR`|User not found|Please check that the user exists, looks like it does not|
