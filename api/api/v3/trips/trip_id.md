@@ -58,9 +58,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
         "date": "2016-01-29T18:36:17Z"
     },
     "beginDate": "2016-01-29T18:39:17Z",
-    "endDate": "2016-01-29T19:15:15Z",
-    "creationDate": "2016-01-29T18:39:17Z",
-    "lastUpdateDate": "2016-01-29T19:15:15Z"
+    "endDate": "2016-01-29T19:15:15Z"
 }
 ```
 
@@ -71,8 +69,6 @@ The `env` variable as the host of the route can be changed for testing purpose.
 |endLocation|location|The last *location* of the trip|
 |beginDate|date|the date when the trip has started|
 |endDate|date|the date when the trip has stoped|
-|creationDate|date|the date when the trip has been created by Xee|
-|lastUpdateDate|date|the last date when the trip has been updated|
 
 ## Errors
 
