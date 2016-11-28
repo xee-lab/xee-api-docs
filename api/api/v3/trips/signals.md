@@ -37,7 +37,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Parameter name|Parameter value|Mandatory|
 |---|---|---|
-|`name`|The list of *signals* you want, for example, if you want `LockSts` and `Odometer`, you'll have `&name=LockSts&name,Odometer`, by default, all the signals available are sent back. You can see the [full list here](../cars/signals_list.md)|NO|
+|`name`|The list of *signals* you want, for example, if you want `ComputedFuelLevel` and `Odometer`, you'll have `?name=ComputedFuelLevel,Odometer`, by default, all the signals available are sent back. You can see the [full list here](../cars/signals_list.md)|NO|
 
 ## Success Response
 
@@ -47,8 +47,8 @@ The `env` variable as the host of the route can be changed for testing purpose.
 ```javascript 
 [
 	{
-	    "name": "LockSts",
-	    "value": 0,
+	    "name": "ComputedFuelLevel",
+	    "value": 25,
 	    "date": "2016-03-01T02:24:24.000000+00:00"
     },
     {
