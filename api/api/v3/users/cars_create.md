@@ -59,7 +59,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
     "year": 2014,
     "numberPlate": "M-42-TS",
     "timezone": "Europe/Paris",
-    "deviceId": "E133742015",
+    "deviceId": null,
     "cardbId": 210,
     "creationDate": "2014-09-23T12:49:48+00:00",
     "lastUpdateDate": "2016-02-19T08:41:58+00:00"
