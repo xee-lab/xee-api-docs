@@ -58,7 +58,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Reason|Status Code|Type|Message|Tip|
 |---|---|---|---|---|
-|You did not required `trips_read`|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the trips_read scope to your app scopes and reconnect the user|
+|Scope `trips_read` is missing|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the trips_read scope to your app scopes and reconnect the user|
 |The token does not have access to this trip|`403`|`AUTHORIZATION_ERROR`|Token can't access this trip|Make sure the token belongs to the user owning the trip you're asking for|
 |The trip does not exist|`404`|`PARAMETERS_ERROR`|trip not found|Please check that the trip exists, looks like it does not|
 |The statistic does not exist|`404`|`PARAMETERS_ERROR`|Statistics not found|Please check that the trip exists and data are present, looks like it does not|

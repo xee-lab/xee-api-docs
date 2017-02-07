@@ -82,7 +82,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 |Reason|Status Code|Type|Message|Tip|
 |---|---|---|---|---|
 |The limit parameter is wrong|`400`|`PARAMETERS_ERROR`|Limit can't be less than 0|The limit in parameter must ben a positive integer|
-|You did not required `locations_read`|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the locations_read scope to your app scopes and reconnect the user|
+|Scope `locations_read` is missing|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the locations_read scope to your app scopes and reconnect the user|
 |The token does not have access to this car|`403`|`AUTHORIZATION_ERROR`|Token can't access this car|Make sure the token belongs to the user owning the car you're asking for|
 |The car does not exist|`404`|`PARAMETERS_ERROR`|Car not found|Please check that the car exists, looks like it does not|
 |Order of dates is wrong|`416`|`PARAMETERS_ERROR`|Range issue in dates|Please check the dates you've set in parameters are correct and begin is before end|
