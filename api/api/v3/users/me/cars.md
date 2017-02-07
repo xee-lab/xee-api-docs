@@ -49,14 +49,14 @@ There is no parameter for this API
 
 |Property|Type|Comment|
 |---|---|---|
-|id|string||
+|id|integer||
 |name|string||
 |make|string|Might be `generic`|
 |model|string|Might be `null`|
 |year|integer|Might be `0`|
 |numberPlate|string|Might be `null`|
 |deviceId|string|The `serial number` of the device. Might be `null` if the car has no device associated|
-|cardbId|integer|Represents the type of the *car* from our point of view, that's how we speek to them|
+|cardbId|integer|Represents the type of the *car* from our point of view, that's how we speak to them|
 |creationDate|date||
 |lastUpdateDate|date||
 
