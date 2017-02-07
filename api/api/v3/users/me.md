@@ -65,4 +65,4 @@ There is *no parameter* for this API
 
 |Reason|Status Code|Type|Message|Tip|
 |---|---|---|---|---|
-|You did not required `users_read`|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the users_read scope to your app scopes and reconnect the user|
+|Scope `users_read` is missing|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the users_read scope to your app scopes and reconnect the user|

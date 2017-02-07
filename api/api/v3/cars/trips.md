@@ -92,7 +92,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Reason|Status Code|Type|Message|Tip|
 |---|---|---|---|---|
-|You did not required `trips_read`|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the trips_read scope to your app scopes and reconnect the user|
+|Scope `trips_read` is missing|`403`|`AUTHORIZATION_ERROR`|Token does not have the required scope|Add the trips_read scope to your app scopes and reconnect the user|
 |The token does not have access to this car|`403`|`AUTHORIZATION_ERROR`|Token can't access this car|Make sure the token belongs to the user owning the car you're asking for|
 |The car does not exist|`404`|`PARAMETERS_ERROR`|Car not found|Please check that the car exists, looks like it does not|
 |Order of dates is wrong|`416`|`PARAMETERS_ERROR`|Range issue in dates|Please check the dates you've set in parameters are correct and begin is before end|
