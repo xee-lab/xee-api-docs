@@ -8,4 +8,4 @@ Interact with device. These routes are quite private, and the required scope to 
 |---|---|
 |[`POST /devices/{xeeId}/associate?carId={carId}`](associate_car.md)|Associate a car to the given device|
 |[`POST /devices/{xeeId}/associate?pin={pin}`](associate_user.md)|Associate a user to the given device|
-|[`POST /devices/{xeeId}/dissociate`](dissoiate.md)|Dissociate the given device from it's car|
+|[`POST /devices/{xeeId}/dissociate`](dissociate.md)|Dissociate the given device from it's car|
