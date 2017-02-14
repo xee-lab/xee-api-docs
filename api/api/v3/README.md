@@ -50,7 +50,7 @@ This is the first route of our API, from this, you can get the logged in user da
 |[`GET /users/me/cars`](users/me/cars.md)|Get all the cars for the connected user|
 |[`GET /users/{userId}`](users/user_id.md)|Get a specific user|
 |[`GET /users/{userId}/cars`](users/cars.md)|Get all the cars from a user|
-|[`POST	/users/{userId}/cars`](users/cars_create.md)|Create a car for this user|
+|[`POST /users/{userId}/cars`](users/cars_create.md)|Create a car for this user|
 
 ### Cars
 
