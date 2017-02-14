@@ -84,6 +84,19 @@ This is the third route of our API, from this, you can get all the *trips relate
 |[`/trips/{tripId}/stats/mileage`](trips/trip_id/stats/mileage.md)|Get a specific *trip* mileage|
 |[`/trips/{tripId}/stats/usedtime`](trips/trip_id/stats/usedtime.md)|Get a specific *trip* duration|
 
+### Devices
+
+This is the fourth route of our API, from this, you can manage your associated devices.
+These routes are quite private, and the required scope to call them is not accessible to all the applications.
+
+> [Devices API](devices/README.md) Associate devices to an given user, to a given car ...
+
+|API|Description|
+|---|---|
+|[`POST /devices/{xeeId}/associate?carId={carId}`](devices/associate_car.md)|Associate a car to the given device|
+|[`POST /devices/{xeeId}/associate?pin={pin}`](devices/associate_user.md)|Associate a user to the given device|
+|[`POST /devices/{xeeId}/dissociate`](devices/dissociate.md)|Dissociate the given device from it's car|
+
 ## Errors
 
 All the errors we throw are mapped on [HTTP Errors codes](https://en.wikipedia.org/wiki/List_of_HTTP_status_codes)
