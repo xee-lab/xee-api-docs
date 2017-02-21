@@ -1,10 +1,10 @@
 # POST /devices/{xeeId}/dissociate
 
-Dissociate the device specified by its `xeeId` and the car
+Dissociate the device specified by its `deviceId` and the car
 
 ## Basics
 
-`[POST] https://{env}.xee.com/v3/devices/{xeeId}/dissociate`
+`[POST] https://{env}.xee.com/v3/devices/{deviceId}/dissociate`
 
 > You'll need the *devices_management* scope.
 
@@ -31,7 +31,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Parameter name|Parameter value|Mandatory|
 |---|---|---|
-|`xeeId`|The `id` of the device you want to dissociate|YES|
+|`deviceId`|The `id` of the device you want to dissociate|YES|
 
 ### Body
 
