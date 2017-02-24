@@ -1,10 +1,10 @@
 # POST /devices/{xeeId}/associate?pin={pin}
 
-Associate a user and a device specified by its `xeeId`
+Associate a user and a device specified by its `deviceId`
 
 ## Basics
 
-`[POST] https://{env}.xee.com/v3/devices/{xeeId}/associate?pin={pin}`
+`[POST] https://{env}.xee.com/v3/devices/{deviceId}/associate?pin={pin}`
 
 > You'll need the *devices_management* scope.
 
@@ -31,7 +31,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 
 |Parameter name|Parameter value|Mandatory|
 |---|---|---|
-|`xeeId`|The `id` of the device you want to associate|YES|
+|`deviceId`|The `id` of the device you want to associate|YES|
 
 ### Query Parameters
 
