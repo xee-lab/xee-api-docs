@@ -94,9 +94,9 @@ These routes are quite private, and the required scope to call them is not acces
 
 |API|Description|
 |---|---|
-|[`POST /devices/{xeeId}/associate?carId={carId}`](devices/associate_car.md)|Associate a car to the given device|
-|[`POST /devices/{xeeId}/associate?pin={pin}`](devices/associate_user.md)|Associate a user to the given device|
-|[`POST /devices/{xeeId}/dissociate`](devices/dissociate.md)|Dissociate the given device from it's car|
+|[`POST /devices/{deviceId}/associate?carId={carId}`](devices/associate_car.md)|Associate a car to the given device|
+|[`POST /devices/{deviceId}/associate?pin={pin}`](devices/associate_user.md)|Associate a user to the given device|
+|[`POST /devices/{deviceId}/dissociate`](devices/dissociate.md)|Dissociate the given device from it's car|
 
 ## Errors
 
