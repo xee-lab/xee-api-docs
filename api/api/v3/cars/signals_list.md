@@ -33,8 +33,8 @@ All the *signals* you can access via the [signals API](signals.md)
 |`ManualWiperSts`|Represents the **Manual Wipers** status|`0` = `off`,<br /> `1` = `on`|
 |`LowSpeedWiperSts`|Represents the **Low speed Wipers** status|`0` = `off`,<br /> `1` = `on`|
 |`HighSpeedWiperSts`|Represents the **High speed Wipers** status|`0` = `off`,<br /> `1` = `on`|
-|`AutoWiperSts`|Represents the **Auto rear Wipers** status|`0` = `off`,<br /> `1` = `on`|
-|`RearWiperSts`|Represents the **Manual rear Wipers** status|`0` = `off`,<br /> `1` = `on`|
+|`AutoWiperSts`|Represents the **Auto automatic Wipers activation ** status|`0` = `off`,<br /> `1` = `on`|
+|`RearWiperSts`|Represents the **Rear Wipers** status|`0` = `off`,<br /> `1` = `on`|
 |**_Speed_**|||
 |`EngineSpeed`|Represents the **Engine speed**|Value is in `rpm`|
 |`VehiculeSpeed`|Represents the **Vehicle speed**|Value is in `km/h`|
