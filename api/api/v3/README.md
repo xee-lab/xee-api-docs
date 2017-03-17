@@ -29,8 +29,8 @@ The process is quite simple, don't be afraid!
 
 |API|Description|
 |---|---|
-|[`/auth/auth`](auth/auth.md)|For the authentication page|
-|[`/auth/access_token`](auth/access_token.md)|For the *access token* API|
+|[`GET /auth/auth`](auth/auth.md)|For the authentication page|
+|[`POST /auth/access_token`](auth/access_token.md)|For the *access token* API|
 
 ## API
 
@@ -46,10 +46,11 @@ This is the first route of our API, from this, you can get the logged in user da
 
 |API|Description|
 |---|---|
-|[`/users/me`](users/me.md)|Get the connected user|
-|[`/users/me/cars`](users/me/cars.md)|Get all the cars for the connected user|
-|[`/users/{userId}`](users/user_id.md)|Get a specific user|
-|[`/users/{userId}/cars`](users/cars.md)|Get all the cars from a user|
+|[`GET /users/me`](users/me.md)|Get the connected user|
+|[`GET /users/me/cars`](users/me/cars.md)|Get all the cars for the connected user|
+|[`GET /users/{userId}`](users/user_id.md)|Get a specific user|
+|[`GET /users/{userId}/cars`](users/cars.md)|Get all the cars from a user|
+|[`POST /users/{userId}/cars`](users/cars_create.md)|Create a car for this user|
 
 ### Cars
 
@@ -59,14 +60,14 @@ This is the second route of our API, from this, you can get all the *raw* car da
 
 |API|Description|
 |---|---|
-|[`/cars/{carId}`](cars/car_id.md)|Get a specific car from its *id*|
-|[`/cars/{carId}/status`](cars/status.md)|Get car *status*|
-|[`/cars/{carId}/locations`](cars/locations.md)|Get car *locations* history|
-|[`/cars/{carId}/locations.geojson`](cars/locations-geojson.md)|Get car *locations* history in a [geojson](http://geojson.org/) format|
-|[`/cars/{carId}/signals`](cars/signals.md)|Get car *signals* history|
-|[`/cars/{carId}/trips`](cars/trips.md)|Get car *trips*|
-|[`/cars/{carId}/stats/mileage`](cars/stats/mileage.md)|Get car *mileage* statistic|
-|[`/cars/{carId}/stats/usedtime`](cars/stats/usedtime.md)|Get car *used time* statistic|
+|[`GET /cars/{carId}`](cars/car_id.md)|Get a specific car from its *id*|
+|[`GET /cars/{carId}/status`](cars/status.md)|Get car *status*|
+|[`GET /cars/{carId}/locations`](cars/locations.md)|Get car *locations* history|
+|[`GET /cars/{carId}/locations.geojson`](cars/locations-geojson.md)|Get car *locations* history in a [geojson](http://geojson.org/) format|
+|[`GET /cars/{carId}/signals`](cars/signals.md)|Get car *signals* history|
+|[`GET /cars/{carId}/trips`](cars/trips.md)|Get car *trips*|
+|[`GET /cars/{carId}/stats/mileage`](cars/stats/mileage.md)|Get car *mileage* statistic|
+|[`GET /cars/{carId}/stats/usedtime`](cars/stats/usedtime.md)|Get car *used time* statistic|
 
 ### Trips
 
@@ -76,13 +77,26 @@ This is the third route of our API, from this, you can get all the *trips relate
 
 |API|Description|
 |---|---|
-|[`/trips/{tripId}`](trips/trip_id.md)|Get a specific *trip* from its *id*|
-|[`/trips/{tripId}/locations`](trips/locations.md)|Get all locations from a *car* during a specific *trip*|
-|[`/trips/{tripId}/locations.geojson`](trips/locations-geojson.md)|Get all locations from a *car* during a specific *trip* in a [geojson](http://geojson.org/) format|
-|[`/trips/{tripId}/signals`](trips/signals.md)|Get all signals from a *car* during a specific *trip*|
-|[`/trips/{tripId}/stats`](trips/trip_id/stats.md)|Get a specific *trip* statistics|
-|[`/trips/{tripId}/stats/mileage`](trips/trip_id/stats/mileage.md)|Get a specific *trip* mileage|
-|[`/trips/{tripId}/stats/usedtime`](trips/trip_id/stats/usedtime.md)|Get a specific *trip* duration|
+|[`GET /trips/{tripId}`](trips/trip_id.md)|Get a specific *trip* from its *id*|
+|[`GET /trips/{tripId}/locations`](trips/locations.md)|Get all locations from a *car* during a specific *trip*|
+|[`GET /trips/{tripId}/locations.geojson`](trips/locations-geojson.md)|Get all locations from a *car* during a specific *trip* in a [geojson](http://geojson.org/) format|
+|[`GET /trips/{tripId}/signals`](trips/signals.md)|Get all signals from a *car* during a specific *trip*|
+|[`GET /trips/{tripId}/stats`](trips/trip_id/stats.md)|Get a specific *trip* statistics|
+|[`GET /trips/{tripId}/stats/mileage`](trips/trip_id/stats/mileage.md)|Get a specific *trip* mileage|
+|[`GET /trips/{tripId}/stats/usedtime`](trips/trip_id/stats/usedtime.md)|Get a specific *trip* duration|
+
+### Devices
+
+This is the fourth route of our API, from this, you can manage your associated devices.
+These routes are quite private, and the required scope to call them is not accessible to all the applications.
+
+> [Devices API](devices/README.md) Associate devices to an given user, to a given car ...
+
+|API|Description|
+|---|---|
+|[`POST /devices/{deviceId}/associate?carId={carId}`](devices/associate_car.md)|Associate a car to the given device|
+|[`POST /devices/{deviceId}/associate?pin={pin}`](devices/associate_user.md)|Associate a user to the given device|
+|[`POST /devices/{deviceId}/dissociate`](devices/dissociate.md)|Dissociate the given device from it's car|
 
 ## Errors
 
