@@ -38,7 +38,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 - Status Code: `200`
 - Body:
 
-```javascript 
+```javascript
 {
     "id": "56b43a4f051f29071f14218d",
     "beginLocation": {
@@ -58,7 +58,9 @@ The `env` variable as the host of the route can be changed for testing purpose.
         "date": "2016-01-29T18:36:17Z"
     },
     "beginDate": "2016-01-29T18:39:17Z",
-    "endDate": "2016-01-29T19:15:15Z"
+    "endDate": "2016-01-29T19:15:15Z",
+    "mileage": 21.67,
+    "usedTime": 1908
 }
 ```
 
@@ -69,6 +71,8 @@ The `env` variable as the host of the route can be changed for testing purpose.
 |endLocation|location|The last *location* of the trip|
 |beginDate|date|the date when the trip has started|
 |endDate|date|the date when the trip has stoped|
+|mileage|double|the distance of the trip in kilometers|
+|usedTime|integer|the total time of the trip|
 
 ## Errors
 

@@ -51,6 +51,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
     "isLocationEnabled": true,
     "creationDate": "2014-08-13T15:20:58+00:00",
     "lastUpdateDate": "2016-02-12T09:07:47+00:00",
+    "email": "foo@bar.com"
 }
 ```
 
@@ -66,7 +67,8 @@ The `env` variable as the host of the route can be changed for testing purpose.
 |role|enum (as string)|`user`, `dev`, others|
 |isLocationEnabled|boolean|`true` if the user has authorized us to retrieve the Xee's locations, `false` otherwise|
 |creationDate|date||
-| lastUpdateDate|date||
+|lastUpdateDate|date||
+|email|string|Email address of the user|
 
 ## Errors
 
