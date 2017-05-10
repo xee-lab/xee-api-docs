@@ -1,4 +1,4 @@
-# /cardb/{cardbId}
+# /cardb/{cardbId} (*DEPRECATED*)
 
 Get a compatibility from a *cardbId*
 

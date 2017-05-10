@@ -1,6 +1,6 @@
-# v1
+# v1 (DEPRECATED)
 
-The first version of Xee Compatibility API
+The first version of Xee Compatibility API (*DEPRECATED*)
 
 ## Authentication
 

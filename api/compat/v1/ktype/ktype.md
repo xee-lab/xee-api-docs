@@ -1,4 +1,4 @@
-# /ktype/{ktype}
+# /ktype/{ktype} (*DEPRECATED*)
 
 Get a compatibility from a *ktype*
 
