@@ -1,10 +1,10 @@
-# /cardb/{cardbId} (*DEPRECATED*)
+# /cardb/{cardbId}
 
-Get a compatibility from a *cardbId*
+Get a compatibility from a *cardb id*
 
 ## Basics
 
-`[GET] https://compat.xee.com/v1/cardb/{cardbId}`
+`[GET] https://cloud.xee.com/v3/compat/cardb/{cardbId}`
 
 Secured by **Basic** auth.
 
@@ -30,15 +30,18 @@ Secured by **Basic** auth.
 ```javascript
 {
     "signalsAvailable": [
-    	{
+        {
+            "name": "GPS",
+            "confidence": true,
+            "evolution": null
+        },
+        {
             "name": "Odometer",
-            "reliability": null, // DEPRECATED will be removed in a futur version
             "confidence": true,
             "evolution": null
         },
         {
             "name": "FuelLevel",
-            "reliability": "incremental", // DEPRECATED will be removed in a futur version
             "confidence": false,
             "evolution": "incremental"
     	}
@@ -46,13 +49,11 @@ Secured by **Basic** auth.
     "signalsUnavailable": [
     	{
             "name": "VehiculeSpeed",
-            "reliability": null, // DEPRECATED will be removed in a futur version
             "confidence": null,
             "evolution": null
         },
         {
             "name": "EngineSpeed",
-            "reliability": null, // DEPRECATED will be removed in a futur version
             "confidence": null,
             "evolution": null
     	}
@@ -62,15 +63,14 @@ Secured by **Basic** auth.
 
 |Property|Type|Comment|
 |---|---|---|
-|signalsAvailable|array|contains *signals*|
-|signalsUnavailable|array|contains *signals*|
+|signalsAvailable|array|Contains all the available *signal* objects for this cardb id|
+|signalsUnavailable|array|Contains all the unavailable *signal* objects for this cardb id|
 
 #### Signal
 
 |Property|Type|Comment|
 |---|---|---|
 |name|string||
-|reliability|enum (as string)|**DEPRECATED** This field is just use for the FuelLevel signal. Might be null, possible values : `continuous`, `incremental`, `wtf` (**W**ill **T**emporatily **F**ail)|
 |confidence|boolean|This field represents the confidence we have on the reliability for this signal. If `true`, the signal is considered as reliable. If `false`, you should not use this signal, unless you checked the `evolution` field before and know what you are doing|
 |evolution|enum (as string)|This field is a represents the evolution of the signal. Might be null, possible values : `continuous`, `incremental`, `wtf` (**W**ill **T**emporatily **F**ail). This field is mainly used when the field `confidence` is set to false.|
 
