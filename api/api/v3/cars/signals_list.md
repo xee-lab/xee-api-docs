@@ -65,6 +65,14 @@ All the *signals* you can access via the [signals API](signals.md)
 |`RearLeftDoorSts`|Represents the **Rear Left door** status |`0` = `closed `,<br /> `1` = `open`|
 |`RearRightDoorSts`|Represents the **Rear Right door** status |`0` = `closed`,<br /> `1` = `open`|
 |`TrunkSts`|Represents the **Trunk** status |`0` = `closed`,<br /> `1` = `open`|
+|**_Electrical Vehicle_**|||
+|`EVBatterySOC`|Represents the **Battery charge** state|Value is in `%`|
+|`EVBatteryVoltage`|Represents the **Battery voltage**|Value is in `V`|
+|`EVBatteryHealth`|Represents the **Battery health** state|Value is in `%`|
+|`EVChargerSts`|Represents the **Charger** status|`0` = `unplugged`,<br /> `1` = `plugged`|
+|`EVChargingSts`|Represents the **Charging** status|`0` = `not charging`,<br /> `1` = `charging`|
+|`EVRemainingChargeTime`|Represents the **Remaining charge time**|Value is in `min`|
+|`EVRemainingRange`|Represents the **Remaining range** distrance|Value is in `km`|
 |**_Pedals_**|||
 |`BrakePedalSts`|Represents the **Brake Pedal** status |`0` = `released`,<br /> `1` = `pressed`|
 |`BrakePedalPosition`|Represents the **Brake Pedal** position|Value is in `%` <br />(*0%* = *released*, *100%* = *fully pressed*)|
