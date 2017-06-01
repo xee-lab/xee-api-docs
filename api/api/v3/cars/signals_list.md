@@ -69,10 +69,10 @@ All the *signals* you can access via the [signals API](signals.md)
 |`EVBatterySOC`|Represents the **Battery charge** state|Value is in `%`|
 |`EVBatteryVoltage`|Represents the **Battery voltage**|Value is in `V`|
 |`EVBatteryHealth`|Represents the **Battery health** state|Value is in `%`|
-|`EVWallPlugSts`|Represents the **Wall plug charger** status|`0` = `absent`,<br /> `1` = `present`|
+|`EVChargerSts`|Represents the **Charger** status|`0` = `absent`,<br /> `1` = `present`|
 |`EVChargingSts`|Represents the **Charging** status|`0` = `inactive`,<br /> `1` = `active`|
-|`EVChargingRemain`|Represents the **Remaining charge time**|Value is in `min`|
-|`EVKilometerRange`|Represents the **Remaining range** distrance|Value is in `km`|
+|`EVRemainingChargeTime`|Represents the **Remaining charge time**|Value is in `min`|
+|`EVRemainingRange`|Represents the **Remaining range** distrance|Value is in `km`|
 |**_Pedals_**|||
 |`BrakePedalSts`|Represents the **Brake Pedal** status |`0` = `released`,<br /> `1` = `pressed`|
 |`BrakePedalPosition`|Represents the **Brake Pedal** position|Value is in `%` <br />(*0%* = *released*, *100%* = *fully pressed*)|
