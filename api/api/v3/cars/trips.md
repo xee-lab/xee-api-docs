@@ -41,6 +41,8 @@ The `env` variable as the host of the route can be changed for testing purpose.
 |---|---|---|
 |`begin`|The start of the interval when you want the *trips*, Format is `2016-04-20T13:37:42Z(+/-HH:mm)` default value is **First day of month at 00:00:00+00:00**|NO|
 |`end`|The end of the interval when you want the *trips*, Format is `2016-04-20T13:37:42Z(+/-HH:mm)` default value is **Current moment when you send request**|NO|
+|`inclusive`|If set to `true`, all the trips started __or__ ended between `begin` and `end` will be returned. If set to `false` (*default value*), only the trips started __and__ ended between `begin` and `end` will be returned.|NO
+
 
 ## Success Response
 
