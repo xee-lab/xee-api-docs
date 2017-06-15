@@ -43,7 +43,8 @@ Secured by **Basic** auth.
                 "type": "plugandgo",
                 "link": null
             }
-        ]
+        ],
+        "category": "124"
     },
     {
         "brandId": 467,
@@ -51,7 +52,8 @@ Secured by **Basic** auth.
         "minStartDate": "2008-08-01T00:00:00Z",
         "maxEndDate": null,
         "cardbid": null,
-        "connection": null
+        "connection": null,
+        "category": "500"
     },
      ...
     {
@@ -63,7 +65,8 @@ Secured by **Basic** auth.
         "connection": [{
             "type": "plugandgo",
             "link": null
-        }]
+        }],
+        "category": "GRANDE"
     },
     ...
 ]
@@ -81,6 +84,7 @@ The response is an array of models.
 |maxEndDate|date|The maximum end date within all the versions for this model|
 |cardbid|int|The cardb id for this model. **/!\\** This field will be populated *only* if *all the versions* of this model have the same cardb id. So if this field is `null` you will have to look for your exact version to get the cardb id.|
 |connection|array(connection)|The available mounting connections for XeeCONNECT for this model. **/!\\** This field will be populated *only* if *all the versions* of this model have common mounting connection informations. So if this field is `null` you will have to look for your exact version to get the cardb id.|
+|category|string|The model category, if you want to group all the models with the same category. For example all the BMW 1 models will have the same category "Série 1"|
 
 ### connection object
 
