@@ -4,7 +4,7 @@ Get a compatibility from a *ktype*
 
 ## Basics
 
-`[GET] https://cloud.xee.com/v3/compat/cardb/{cardbId}`
+`[GET] https://cloud.xee.com/v3/compat/ktypes/{ktype}`
 
 Secured by **Basic** auth.
 
