@@ -45,7 +45,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 	    "longitude": 3.208155,
 	    "altitude": 31.8,
 	    "satellites": 4,
-	    "heading": 167,
+	    "heading": 167.86,
 	    "date": "2016-03-01T02:24:20.000000+00:00"
 	},
 	{
@@ -60,7 +60,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 |longitude|float||
 |altitude|float||
 |satCount|integer|Number of satellites used to determine location|
-|heading|integer|Direction|
+|heading|float|Direction|
 |date|date|the date when the location has been found|
 
 

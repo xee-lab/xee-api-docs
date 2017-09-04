@@ -57,7 +57,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 			"latitude": 50.6817,
 			"longitude": 3.08202,
 			"altitude": 2,
-			"heading": 0,
+			"heading": 167.86,
 			"satellites": 1,
 			"date": "2016-01-29T18:36:17Z"
 		},
@@ -65,7 +65,7 @@ The `env` variable as the host of the route can be changed for testing purpose.
 			"latitude": 50.6817,
 			"longitude": 3.08202,
 			"altitude": 2,
-			"heading": 0,
+			"heading": 42.00,
 			"satellites": 1,
 			"date": "2016-01-29T18:36:17Z"
 		},
