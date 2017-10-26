@@ -15,6 +15,7 @@ Secured by **Basic** auth.
 |Header name|Header value|Mandatory|
 |---|---|---|
 |Authorization|`Basic` with the `base64` of your `clientId` and  `clientSecret `|YES|
+|Accept-Language|The language in which you want to get the mounting manual link. Available languages are: fr,de,en,es,it,nl,pt|NO : default value is fr|
 
 ### Url Parameters
 
