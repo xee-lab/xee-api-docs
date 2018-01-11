@@ -15,6 +15,7 @@ Secured by **Basic** auth.
 |Header name|Header value|Mandatory|
 |---|---|---|
 |Authorization|`Basic` with the `base64` of your `clientId` and  `clientSecret `|YES|
+|Accept-Language|The language in which you want to get the mounting manual link. Available languages are: fr,de,en,es,it,nl,pt|NO : default value is fr|
 
 ### Url Parameters
 
@@ -67,7 +68,8 @@ Secured by **Basic** auth.
                 "type": "plugandgo",
                 "link": null
             }
-        ]
+        ],
+        "manualURL": "https://cloud.xee.com/v3/compat/manual?token=eyJhbGciOiJIUzI1NiIsInR5cCI6IJ9.eyJleHBpcmVfYXQiOjE1MDkwMmlkIjoiMEIxdVNRSlhqUTBtMlNVMTJVbWxxZDNGV1pHcyJ9.0X7RDgUIO-1NeUnWCiwN6LsrqmqrAJ71Bun"
     }
 }
 ```
@@ -94,6 +96,7 @@ Secured by **Basic** auth.
 |analyzed|boolean|`true` if this ktype has been analyzed|
 |can|boolean|`true` if the ktype has can|
 |connection|array(connection)|The available mounting connections for XeeCONNECT for this ktype|
+|manualURL|string|The URL to download the manual detailing how to mount a XeeCONNECT for this ktype. You have to call this URL by giving the Basic `Authorization` header as for this request. If you want to get the manual in a different language, you can use the `Accept-Language` header as describe above. The given link is valid for 10 minutes, after what you need to ask a new token for this manual.|
 
 
 ### connection object
@@ -101,7 +104,6 @@ Secured by **Basic** auth.
 |Property|Type|Comment|
 |---|---|---|
 |type|enum(plugandgo\|wired)|The mounting type for this model. `plugandgo` means "On Board Diagnostics" plug compatible, and `wired` means that hidden mounting is mandatory for this model|
-|link|string|The URL to the mounting manual for this model. For now this property will always be `null`|
 
 
 ## Errors
